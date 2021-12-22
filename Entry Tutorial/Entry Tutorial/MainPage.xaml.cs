@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace Entry_Tutorial
+{
+    public partial class MainPage : ContentPage
+    {
+        void OnEntryTextChanged(object sender, TextChangedEventArgs e)
+        {
+            string oldText = e.OldTextValue;
+            string newText = e.NewTextValue;
+        }
+
+        void OnEntryCompleted(object sender, EventArgs e)
+        {
+            string text = ((Entry)sender).Text;
+        }
+    }
+    }
+}
